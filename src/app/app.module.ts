@@ -9,6 +9,11 @@ import { SkiStep3Component } from './ski-step3/ski-step3.component';
 import { SkiStep4Component } from './ski-step4/ski-step4.component';
 import { SkiStep5Component } from './ski-step5/ski-step5.component';
 import { SkiBaseLineComponent } from './ski-base-line/ski-base-line.component';
+import { SplitStep1Component } from './split-step1/split-step1.component';
+import { SplitStep2Component } from './split-step2/split-step2.component';
+import { SplitStep3Component } from './split-step3/split-step3.component';
+import { SplitStep4Component } from './split-step4/split-step4.component';
+import { SplitStep5Component } from './split-step5/split-step5.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { SkiBaseLineComponent } from './ski-base-line/ski-base-line.component';
     SkiStep3Component,
     SkiStep4Component,
     SkiStep5Component,
-    SkiBaseLineComponent
+    SkiBaseLineComponent,
+    SplitStep1Component,
+    SplitStep2Component,
+    SplitStep3Component,
+    SplitStep4Component,
+    SplitStep5Component
   ],
   imports: [
     BrowserModule,
