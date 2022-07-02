@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SkiBaseLineComponent } from './ski-base-line.component';
+import { HomeComponentComponent } from './home-component.component';
 
-describe('SkiBaseLineComponent', () => {
-  let component: SkiBaseLineComponent;
-  let fixture: ComponentFixture<SkiBaseLineComponent>;
+describe('HomeComponentComponent', () => {
+  let component: HomeComponentComponent;
+  let fixture: ComponentFixture<HomeComponentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SkiBaseLineComponent ]
+      declarations: [ HomeComponentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SkiBaseLineComponent);
+    fixture = TestBed.createComponent(HomeComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

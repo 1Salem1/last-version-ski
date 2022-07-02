@@ -1,10 +1,11 @@
 <div class="multisteps_form_panel active" data-animation="slideVert">
     <div class="form_content">
        <div class="row">
-          <div class="col-lg-4">
-             <div class="form_title ps-5">
-                <h1 class="text-white">What is your height?</h1>
-             </div>
+          <div class="col-lg-4  self-center">
+            <div class="form_title ps-5  ">
+               <span  class="title text-black font-sans text-3xl  mb-5 "><span class="font-bold">HEIGHT&nbsp;</span>AND&nbsp; <span class="font-bold">WEIGHT&nbsp;</span>WILL&nbsp;BE <span class="font-bold">OUR&nbsp;STARTING&nbsp;POINT&nbsp;</span></span>
+
+               </div>
           </div>
           <div class="col-lg-4 text-center">
              <div class="form_img">
@@ -12,43 +13,50 @@
              </div>
           </div>
           <div class="col-lg-4 text-end">
-             <div class="form_items radio-list">
-                <ul class="text-uppercase list-unstyled">
-                   <li>
-                      <label for="opt_1" class="step_1 rounded-pill animate__animated animate__fadeInRight animate_25ms active">
-                         <span class="label-pointer rounded-pill text-center">A</span>
-                         <input type="radio" id="opt_1" name="stp_1_select_option" value="21 June 2014" checked>
-                         <span class="label-content d-inline-block text-center rounded-pill">21 June 2014</span>
-                      </label>
-                   </li>
-                   <li>
-                      <label for="opt_2" class="step_1 rounded-pill  animate__animated animate__fadeInRight animate_50ms">
-                         <span class="label-pointer rounded-pill text-center">B</span>
-                         <input type="radio" id="opt_2" name="stp_1_select_option" value="21 June 2015">
-                         <span class="label-content d-inline-block text-center rounded-pill">21 June 2015</span>
-                      </label>
-                   </li>
-                   <li>
-                      <label for="opt_3" class="step_1 rounded-pill animate__animated animate__fadeInRight animate_100ms">
-                         <span class="label-pointer rounded-pill text-center">C</span>
-                         <input type="radio" id="opt_3" name="stp_1_select_option" value="8 June 2016">
-                         <span class="label-content d-inline-block text-center rounded-pill">8 June 2016</span>
-                      </label>
-                   </li>
-                   <li>
-                      <label for="opt_4" class="step_1 animate__animated animate__fadeInRight animate_150ms">
-                         <span class="label-pointer rounded-pill text-center">D</span>
-                         <input type="radio" id="opt_4" name="stp_1_select_option" value="21 September 2015">
-                         <span class="label-content d-inline-block text-center rounded-pill">21 Sept 2015</span>
-                      </label>
-                   </li>
-                </ul>
+             <div >
+               <ul  >
+                  <li>
+                    <div class="review_block mt-6">
+                       <div class="range-field mb-5">
+                          <h2  class="title text-black font-sans text-xl text-center mb-4">HOW TALL ARE YOU ?</h2>
+                         <span class="min_slider">140 cm</span>
+                         <span class="max_slider">200 cm</span>
+
+                         <p class="text-center text-2xl font-bold text-orange-600 mb-2" for ="range_height" >{{height}}</p>
+                         <input  formControlName = "height"  class="slider" type="range" id="range_height" min="140" max="200" step="1"   (input)="HeightChanged($event)" /> 
+                     
+                      
+                      
+                       </div>
+                     </div>
+                  </li>
+               
+                
+                  <li>
+                    <div class="review_block">
+                       <div class="range-field">
+                          <h2  class="title text-black font-sans text-xl text-center mb-4">HOW MUCH DO YOU WEIGHT ?</h2>
+                         <span class="min_slider">40 kg</span>
+                         <span class="max_slider">130 kg</span>
+
+                         <p  class="text-center text-2xl font-bold text-orange-600 mb-2" >{{weight}}</p>
+                         <input  formControlName = "height"  class="slider" type="range" id="range_height" min="40" max="130" step="1"   (input)="WeightChanged($event)" /> 
+                    
+                      
+                      
+                       </div>
+                     </div>
+                  </li>
+               </ul>
              </div>
           </div>
        </div>
     </div>
     <!---------- Form Button ---------->
     <div class="form_btn py-5 d-flex justify-content-center align-items-center">
-       <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" id="nextBtn"> Next Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-    </div>
+      <button routerLink="/" type="button" class="js-btn-prev f_btn rounded-pill disable text-uppercase" id="prevBtn"><span><i
+               class="fas fa-arrow-left pe-1"></i></span> PREVIOUS</button>
+      <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" > NEXT
+         <span><i class="fas fa-arrow-right ps-1"></i></span></button>
+   </div>
  </div>

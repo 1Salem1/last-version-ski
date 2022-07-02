@@ -3,6 +3,11 @@
 // Version       :  1.0.0
 // Author        :  jthemes (https://themeforest.net/user/jthemes)
 // ==================================================
+
+// jQuery v3.3.1 is supported
+
+
+
 $(function(){
   // "use strict";
   
@@ -129,7 +134,7 @@ $(function(){
           removeClasses(DOMstrings.stepFormPanels, 'animate__animated', animation);
         }, 1200);
         
-        setFormHeight(elem);
+        //setFormHeight(elem);
         
       }
     });
@@ -138,19 +143,19 @@ $(function(){
   
   
   //set form height equal to current panel height
-  const formHeight = activePanel => {
+/*   const formHeight = activePanel => {
     
     const activePanelHeight = activePanel.offsetHeight;
     
     DOMstrings.stepsForm.style.height = `${activePanelHeight}px`;
     
-  };
+  }; */
   
-  const setFormHeight = () => {
+/*   const setFormHeight = () => {
     const activePanel = getActivePanel();
     
     formHeight(activePanel);
-  };
+  }; */
   
   //STEPS BAR CLICK FUNCTION
   DOMstrings.stepsBar.addEventListener('click', e => {
@@ -225,10 +230,10 @@ $(function(){
   });
   
   //SETTING PROPER FORM HEIGHT ONLOAD
-  window.addEventListener('load', setFormHeight, true);
+ // window.addEventListener('load', setFormHeight, true);
   
   //SETTING PROPER FORM HEIGHT ONRESIZE
-  window.addEventListener('resize', setFormHeight, true);
+ // window.addEventListener('resize', setFormHeight, true);
   
   
 });

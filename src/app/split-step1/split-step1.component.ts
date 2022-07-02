@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SplitStep1Component implements OnInit {
 
-  constructor() { }
+  height : any= "Slide me";
+  weight : any = "Slide me";
 
-  ngOnInit(): void {
-  }
+
+ constructor() { }
+
+ ngOnInit(
+  
+
+ ): void {
+ }
+
+ 
+ HeightChanged(e : any ) {
+   this.height = e.target.value + ' cm'
+ }
+
+
+ WeightChanged(e : any ) {
+   this.weight = e.target.value + ' Kg'
+ }
+
 
 }
+

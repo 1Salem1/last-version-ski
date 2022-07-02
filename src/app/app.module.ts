@@ -14,6 +14,8 @@ import { SplitStep2Component } from './split-step2/split-step2.component';
 import { SplitStep3Component } from './split-step3/split-step3.component';
 import { SplitStep4Component } from './split-step4/split-step4.component';
 import { SplitStep5Component } from './split-step5/split-step5.component';
+import { SplitboardBaseLineComponent } from './splitboard-base-line/splitboard-base-line.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { SplitStep5Component } from './split-step5/split-step5.component';
     SplitStep2Component,
     SplitStep3Component,
     SplitStep4Component,
-    SplitStep5Component
+    SplitStep5Component,
+    SplitboardBaseLineComponent,
+    HomeComponentComponent
   ],
   imports: [
     BrowserModule,

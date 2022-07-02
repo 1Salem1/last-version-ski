@@ -1,29 +1,26 @@
 <div class="wrapper position-relative">
     <div class="container-fluid px-5">
        <div class="step_bar_content ps-5 pt-5">
-          <h5 class="text-black bold text-uppercase d-inline-block">OGSO SMART PRODUCT SELECTOR</h5>
+         <h5 class="text-black bold text-uppercase d-inline-block">OGSO SMART PRODUCT SELECTOR</h5>
        </div>
        <div class="progress_bar steps_bar mt-3 ps-5 d-inline-block">
           <div class="step rounded-pill d-inline-block text-center position-relative active current">1</div>
           <div class="step rounded-pill d-inline-block text-center position-relative">2</div>
           <div class="step rounded-pill d-inline-block text-center position-relative">3</div>
           <div class="step rounded-pill d-inline-block text-center position-relative">4</div>
-          <div class="step rounded-pill d-inline-block text-center position-relative">5</div>
-          <div class="step rounded-pill d-inline-block text-center position-relative">6</div>
-          <div class="step rounded-pill d-inline-block text-center position-relative">7</div>
        </div>
-       <div class="multisteps_form position-relative" id="wizard" >
+       <form class="multisteps_form position-relative" id="wizard" method="POST" action="../thankyou/index-1.html">
     
-          
-         <app-ski-step1></app-ski-step1>
-         <app-ski-step2></app-ski-step2>
-         <app-ski-step3></app-ski-step3>
-         <app-ski-step4></app-ski-step4>
+          <router-outlet>
+
+            
+          </router-outlet>
+        
   
          
           
          
-       </div>
+       </form>
     </div>
     
   </div>
